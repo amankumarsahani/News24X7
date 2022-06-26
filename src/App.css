@@ -1,0 +1,72 @@
+:root {
+    --background:#ddd;
+    --text-primary:#37474f;
+    --box-bg-shade1:#f2f2f2;
+    --box-bg-shade2:#fff;
+    --rev-color:#15202b;
+    --light-border:#15202b;
+    --shadow:#bbb;
+  }
+  
+[data-theme='dark'] {
+    --background:#000;
+    --text-primary:#0062ff;
+    --box-bg-shade1:#121418;
+    --box-bg-shade2:#131822;
+    --rev-color:#fff;
+    --light-border:#bbb;
+    --shadow:#15202b;
+  }
+
+.newzbox{
+    background-color: var(--background);
+  }
+.card{
+    width: 20rem;
+    height:32rem;
+    overflow: hidden;
+    margin: 10px 0;
+    border: 3px solid var(--light-border);
+    background-image: linear-gradient(90deg, var(--box-bg-shade1), var(--box-bg-shade2));
+    box-shadow: 5px 5px 10px var(--shadow);
+}
+
+/* .navbar{
+    position: fixed;
+} */
+
+.heading{
+    text-align: center;
+    color: var(--rev-color);
+    margin-top: 4rem;
+}
+
+.heading h1{
+    font-weight: bolder;
+}
+.card-img-top{
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid var(--rev-color);
+}
+
+.brnd{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-title{
+    font-weight: 700;
+    color: var(--rev-color);
+}
+
+.card-text{
+    font-size: 0.9rem;
+    color: var(--rev-color);
+}
+
+.card-author{
+    font-weight: bolder;
+    color: var(--rev-color);
+}
